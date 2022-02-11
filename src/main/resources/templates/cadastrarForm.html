@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="https://www.thymeleaf.org">
+    <title>Agenda Cadastrar</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/process}" th:object="${agenda}" method="post">
+
+    <input type="text" th:field="*{titulo}">
+    <input type="text" th:field="*{descricao}">
+    <input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>
